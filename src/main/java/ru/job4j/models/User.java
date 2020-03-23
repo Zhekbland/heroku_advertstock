@@ -1,5 +1,8 @@
 package ru.job4j.models;
 
+
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
 import java.util.*;
 
@@ -11,7 +14,9 @@ import java.util.*;
  * @since 18.10.2019.
  */
 @Entity
-@Table(name = "Users")
+@Table(name = "users")
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class User {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

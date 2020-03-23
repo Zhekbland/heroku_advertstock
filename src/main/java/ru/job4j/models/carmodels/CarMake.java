@@ -1,11 +1,15 @@
 package ru.job4j.models.carmodels;
 
 
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @Table(name = "carmakes")
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class CarMake {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

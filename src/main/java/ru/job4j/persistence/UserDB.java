@@ -3,7 +3,6 @@ package ru.job4j.persistence;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.hibernate.LockMode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -60,7 +59,7 @@ public class UserDB implements IStock<User> {
 
     @Override
     public User getById(int id) {
-        return this.tx(session -> session.get(User.class, id, LockMode.PESSIMISTIC_WRITE));
+        return this.tx(session -> session.get(User.class, id));
     }
 
     @Override
