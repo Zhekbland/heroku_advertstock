@@ -9,11 +9,20 @@
         <!--        <property name="hibernate.hbm2ddl.auto">create-drop</property>-->
         <!--        <property name="show_sql">true</property>-->
 
-        <property name="connection.url">jdbc:mysql://88.99.94.73/zhekb953_advertstock?serverTimezone=UTC</property>
-        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.username">zhekb953_jpa</property>
-        <property name="connection.password">3Q0z6W5j</property>
-        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+<!--        <property name="connection.url">jdbc:mysql://88.99.94.73/zhekb953_advertstock?serverTimezone=UTC</property>-->
+<!--        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+<!--        <property name="connection.username">zhekb953_jpa</property>-->
+<!--        <property name="connection.password">3Q0z6W5j</property>-->
+<!--        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>-->
+<!--        <property name="hibernate.hbm2ddl.auto">create-drop</property>-->
+<!--        <property name="show_sql">true</property>-->
+
+        <!--heroku connection-->
+        <property name="connection.url">jdbc:postgresql://ec2-54-75-231-215.eu-west-1.compute.amazonaws.com:5432/dd0u8d5tt7m09p</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">ofgduvdtyswjbc</property>
+        <property name="connection.password">36f1de6b84930eef895dfb1947a6df41f76007a3b14a9f3c35e6e4fd141c21dd</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
         <property name="show_sql">true</property>
 
