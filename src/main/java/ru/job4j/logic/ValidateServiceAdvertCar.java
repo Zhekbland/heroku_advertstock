@@ -21,6 +21,9 @@ public class ValidateServiceAdvertCar implements Validate<Car> {
     private final IStock<Car> advertCarDB = AdvertCarDB.getInstance();
     private static final ValidateServiceAdvertCar INSTANCE = new ValidateServiceAdvertCar();
 
+    private ValidateServiceAdvertCar() {
+    }
+
     public static ValidateServiceAdvertCar getInstance() {
         return INSTANCE;
     }

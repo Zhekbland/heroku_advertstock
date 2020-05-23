@@ -13,9 +13,9 @@ import java.util.stream.Collectors;
 public class PartsCarDB {
 
     private static final PartsCarDB INSTANCE = new PartsCarDB();
-    private final SessionFactory sessionFactory = DB.getInstance().getSessionFactory();;
+    private final SessionFactory sessionFactory = DB.getSessionFactory();
 
-    public PartsCarDB() {
+    private PartsCarDB() {
     }
 
     public static PartsCarDB getInstance() {

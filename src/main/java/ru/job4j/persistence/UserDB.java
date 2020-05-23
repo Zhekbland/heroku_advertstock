@@ -17,9 +17,9 @@ public class UserDB implements IStock<User> {
 
     private final static Logger LOG = LogManager.getLogger(UserDB.class.getName());
     private static final UserDB INSTANCE = new UserDB();
-    private final SessionFactory sessionFactory = DB.getInstance().getSessionFactory();
+    private final SessionFactory sessionFactory = DB.getSessionFactory();
 
-    public UserDB() {
+    private UserDB() {
     }
 
     public static UserDB getInstance() {

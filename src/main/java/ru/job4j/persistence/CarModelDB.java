@@ -10,9 +10,9 @@ import java.util.function.Function;
 public class CarModelDB {
 
     private static final CarModelDB INSTANCE = new CarModelDB();
-    private final SessionFactory sessionFactory =  DB.getInstance().getSessionFactory();;
+    private final SessionFactory sessionFactory =  DB.getSessionFactory();
 
-    public CarModelDB() {
+    private CarModelDB() {
     }
 
     public static CarModelDB getInstance() {

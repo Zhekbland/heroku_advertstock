@@ -21,6 +21,10 @@ public class ValidateServicePicture implements Validate<Picture> {
     private static final ValidateServicePicture INSTANCE = new ValidateServicePicture();
     private static final Logger LOG = LogManager.getLogger(ValidateServicePicture.class.getName());
 
+    private ValidateServicePicture() {
+
+    }
+
     public static Validate getInstance() {
         return INSTANCE;
     }

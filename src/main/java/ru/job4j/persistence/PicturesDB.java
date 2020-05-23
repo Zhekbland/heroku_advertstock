@@ -11,9 +11,9 @@ import java.util.function.Function;
 public class PicturesDB implements IStock<Picture> {
 
     private static final PicturesDB INSTANCE = new PicturesDB();
-    private final SessionFactory sessionFactory = DB.getInstance().getSessionFactory();;
+    private final SessionFactory sessionFactory = DB.getSessionFactory();
 
-    public PicturesDB() {
+    private PicturesDB() {
     }
 
     public static PicturesDB getInstance() {

@@ -10,10 +10,10 @@ import java.util.stream.Collectors;
 public class AdvertCarDB implements IStock<Car> {
 
     private static final AdvertCarDB INSTANCE = new AdvertCarDB();
-    private final SessionFactory sessionFactory = DB.getInstance().getSessionFactory();
+    private final SessionFactory sessionFactory = DB.getSessionFactory();
 
-    public AdvertCarDB() {
-        super();
+    private AdvertCarDB() {
+
     }
 
     public static AdvertCarDB getInstance() {

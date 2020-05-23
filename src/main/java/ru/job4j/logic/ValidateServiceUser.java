@@ -21,6 +21,10 @@ public class ValidateServiceUser implements Validate<User> {
     private static final Logger LOG = LogManager.getLogger(ValidateServiceUser.class.getName());
     private final IStock<User> userDB = UserDB.getInstance();
 
+    private ValidateServiceUser() {
+
+    }
+
 
     public static ValidateServiceUser getInstance() {
         return INSTANCE;
